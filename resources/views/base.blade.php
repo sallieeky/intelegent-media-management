@@ -47,7 +47,7 @@
                 </a>
             </div>
             <div class="col-lg-8 text-center text-lg-right">
-                <img class="img-fluid" src="/img/logo.png" alt="Logo Papua Barat" width="50"> Command Center Papua Barat
+                <img class="img-fluid" src="/img/logo.png" alt="Logo Papua Barat" width="32"> Command Center Papua Barat
             </div>
         </div>
     </div>
@@ -65,9 +65,9 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav mr-auto py-0">
-                    <a href="/" class="nav-item nav-link active">Beranda</a>
-                    <a href="#" class="nav-item nav-link">Nasional</a>
-                    <a href="#" class="nav-item nav-link">Internasional</a>
+                    <a href="/" class="nav-item nav-link @yield("beranda_active")">Beranda</a>
+                    <a href="/berita-nasional" class="nav-item nav-link @yield("nasional_active")">Nasional</a>
+                    <a href="/berita-internasional" class="nav-item nav-link @yield("internasional_active")">Internasional</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Kategori</a>
                         <div class="dropdown-menu rounded-0 m-0">

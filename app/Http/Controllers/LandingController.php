@@ -18,8 +18,19 @@ class LandingController extends Controller
             "sports",
             "technology"
         ];
+        $terbaru = Http::get("https://newsapi.org/v2/top-headlines?country=id&from=" . date("Y-m-d") . "&to=" . date("Y-m-d") . "&sortBy=popularity&apiKey=" . env("NEWS_KEY"))->json();
         $nasional = Http::get("https://newsapi.org/v2/top-headlines?country=id&apiKey=" . env("NEWS_KEY"))->json();
         $internasional = Http::get("https://newsapi.org/v2/top-headlines?country=us&apiKey=" . env("NEWS_KEY"))->json();
-        return view('beranda', compact('kategori', 'nasional', 'internasional'));
+        return view('beranda', compact('kategori', 'nasional', 'internasional', 'terbaru'));
+    }
+
+    public function nasional(Request $request)
+    {
+        return view("berita-nasional");
+    }
+
+    public function internasional(Request $request)
+    {
+        return view("daftar-berita");
     }
 }
