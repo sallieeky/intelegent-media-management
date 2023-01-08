@@ -237,7 +237,7 @@
     <div class="container">
         <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
             <h3 class="m-0">Berita Nasional</h3>
-            <a class="text-secondary font-weight-medium text-decoration-none" href="">Lihat Semua</a>
+            <a class="text-secondary font-weight-medium text-decoration-none" href="/berita-nasional">Lihat Semua</a>
         </div>
         <div class="owl-carousel owl-carousel-2 carousel-item-4 position-relative">
             @foreach ($nasional["articles"] as $dt)
@@ -266,7 +266,7 @@
     <div class="container">
         <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
             <h3 class="m-0">Berita Internasional</h3>
-            <a class="text-secondary font-weight-medium text-decoration-none" href="">Lihat Semua</a>
+            <a class="text-secondary font-weight-medium text-decoration-none" href="berita-internasional">Lihat Semua</a>
         </div>
         <div class="owl-carousel owl-carousel-2 carousel-item-4 position-relative">
             @foreach ($internasional["articles"] as $dt)

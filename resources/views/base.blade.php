@@ -77,12 +77,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
+                {{-- <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
                     <input type="text" class="form-control" placeholder="Keyword">
                     <div class="input-group-append">
                         <button class="input-group-text text-secondary"><i class="fa fa-search"></i></button>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </nav>
     </div>
@@ -98,13 +98,13 @@
                     <h1 class="mb-2 mt-n2 display-5 text-uppercase"><span class="text-primary">IM</span>M</h1>
                 </a>
                 <p>IMM adalah sebuah aplikasi berbasis web yang memiliki kemampuan untuk melakukan pemantauan data/informasi yang berasal dari seluruh pemberitaan media, baik media online, media cetak, televisi, serta media sosial twitter dan facebook.</p>
-                <div class="d-flex justify-content-start mt-4">
+                {{-- <div class="d-flex justify-content-start mt-4">
                     <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
                     <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-youtube"></i></a>
-                </div>
+                </div> --}}
             </div>
             <div class="col-lg-6 col-md-6 mb-5">
                 <h4 class="font-weight-bold mb-4">Kategori</h4>
@@ -141,5 +141,6 @@
 
     <!-- Template Javascript -->
     <script src="/dashboard_assets/js/main.js"></script>
+    @yield("script")
 </body>
 </html>

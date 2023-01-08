@@ -26,18 +26,21 @@ class LandingController extends Controller
 
     public function nasional(Request $request)
     {
-        return view("berita-nasional");
+        $jenis = "Nasional";
+        $data = Http::get("https://newsapi.org/v2/top-headlines?country=id&apiKey=" . env("NEWS_KEY"))->json();
+        return view("berita", compact('data', 'jenis'));
     }
 
     public function internasional(Request $request)
     {
-        return view("daftar-berita");
+        $jenis = "Internasional";
+        $data = Http::get("https://newsapi.org/v2/top-headlines?country=us&apiKey=" . env("NEWS_KEY"))->json();
+        return view("berita", compact('data', 'jenis'));
     }
 
     public function kategori($kategori)
     {
         $data = Http::get("https://newsapi.org/v2/top-headlines?country=id&category=" . $kategori . "&apiKey=" . env("NEWS_KEY"))->json();
         return view('kategori', compact('data', 'kategori'));
-        // return view('kategori', compact('kategori'));
     }
 }
