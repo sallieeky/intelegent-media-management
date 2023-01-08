@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [LandingController::class, 'index']);
 Route::get('/berita-nasional', [LandingController::class, 'nasional']);
 Route::get('/berita-internasional', [LandingController::class, 'internasional']);
+
+Route::get('/kategori/{kategori}', [LandingController::class, 'kategori']);

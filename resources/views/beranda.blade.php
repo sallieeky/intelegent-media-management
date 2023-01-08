@@ -14,11 +14,11 @@
                         <img class="img-fluid h-100" src="{{ $dt['urlToImage'] }}" style="object-fit: cover;">
                         <div class="overlay">
                             <div class="mb-1">
-                                <a class="text-white" href="">{{ $dt["source"]["name"] }}</a>
+                                <a class="text-white" href="#">{{ $dt["source"]["name"] }}</a>
                                 <span class="px-2 text-white">/</span>
-                                <a class="text-white" href="">{{ date("d F Y", strtotime($dt["publishedAt"])) }}</a>
+                                <a class="text-white" href="#">{{ date("d F Y", strtotime($dt["publishedAt"])) }}</a>
                             </div>
-                            <a class="h2 m-0 text-white font-weight-bold" href="">{{ substr($dt["title"], 0,50) }}...</a>
+                            <a class="h2 m-0 text-white font-weight-bold" href="{{ $dt['url'] }}" target="_blank">{{ substr($dt["title"], 0,50) }}...</a>
                         </div>
                     </div>
                     @endforeach
@@ -31,25 +31,25 @@
                 </div>
                 <div class="position-relative overflow-hidden mb-3" style="height: 80px;">
                     <img class="img-fluid w-100 h-100" src="/dashboard_assets/img/cat-500x80-1.jpg" style="object-fit: cover;">
-                    <a href="" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
+                    <a href="/kategori/business" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
                         Business
                     </a>
                 </div>
                 <div class="position-relative overflow-hidden mb-3" style="height: 80px;">
                     <img class="img-fluid w-100 h-100" src="/dashboard_assets/img/cat-500x80-2.jpg" style="object-fit: cover;">
-                    <a href="" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
+                    <a href="/kategori/technology" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
                         Technology
                     </a>
                 </div>
                 <div class="position-relative overflow-hidden mb-3" style="height: 80px;">
                     <img class="img-fluid w-100 h-100" src="/dashboard_assets/img/cat-500x80-3.jpg" style="object-fit: cover;">
-                    <a href="" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
+                    <a href="/kategori/entertainment" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
                         Entertainment
                     </a>
                 </div>
                 <div class="position-relative overflow-hidden" style="height: 80px;">
                     <img class="img-fluid w-100 h-100" src="/dashboard_assets/img/cat-500x80-4.jpg" style="object-fit: cover;">
-                    <a href="" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
+                    <a href="/kategori/sports" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
                         Sports
                     </a>
                 </div>
@@ -246,13 +246,13 @@
                 <img class="img-fluid w-100 h-100" src="{{ $dt['urlToImage'] }}" style="object-fit: cover;">
                 <div class="overlay">
                     <div class="mb-1" style="font-size: 13px;">
-                        <a class="text-white" href="">{{ $dt["source"]["name"] }}</a>
+                        <a class="text-white" href="#">{{ $dt["source"]["name"] }}</a>
                         <span class="px-1 text-white">/</span>
-                        <a class="text-white" href="">{{ 
+                        <a class="text-white" href="#">{{ 
                             date("d F Y", strtotime($dt["publishedAt"]))
                         }}</a>
                     </div>
-                    <a class="h4 m-0 text-white" href="">{{ substr($dt["title"], 0,20) }}...</a>
+                    <a class="h4 m-0 text-white" href="{{ $dt['url'] }}" target="_blank">{{ substr($dt["title"], 0,50) }}...</a>
                 </div>
             </div>
             @endforeach
@@ -275,13 +275,13 @@
                 <img class="img-fluid w-100 h-100" src="{{ $dt['urlToImage'] }}" style="object-fit: cover;">
                 <div class="overlay">
                     <div class="mb-1" style="font-size: 13px;">
-                        <a class="text-white" href="">{{ $dt["source"]["name"] }}</a>
+                        <a class="text-white" href="#">{{ $dt["source"]["name"] }}</a>
                         <span class="px-1 text-white">/</span>
-                        <a class="text-white" href="">{{ 
+                        <a class="text-white" href="#">{{ 
                             date("d F Y", strtotime($dt["publishedAt"]))
                         }}</a>
                     </div>
-                    <a class="h4 m-0 text-white" href="">{{ substr($dt["title"], 0,20) }}...</a>
+                    <a class="h4 m-0 text-white" href="{{ $dt['url'] }}" target="_blank">{{ substr($dt["title"], 0,50) }}...</a>
                 </div>
             </div>
             @endforeach

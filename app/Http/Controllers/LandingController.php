@@ -33,4 +33,11 @@ class LandingController extends Controller
     {
         return view("daftar-berita");
     }
+
+    public function kategori($kategori)
+    {
+        $data = Http::get("https://newsapi.org/v2/top-headlines?country=id&category=" . $kategori . "&apiKey=" . env("NEWS_KEY"))->json();
+        return view('kategori', compact('data', 'kategori'));
+        // return view('kategori', compact('kategori'));
+    }
 }

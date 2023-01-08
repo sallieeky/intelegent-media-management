@@ -69,10 +69,10 @@
                     <a href="/berita-nasional" class="nav-item nav-link @yield("nasional_active")">Nasional</a>
                     <a href="/berita-internasional" class="nav-item nav-link @yield("internasional_active")">Internasional</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Kategori</a>
+                        <a href="#" class="nav-link dropdown-toggle @yield("kategori_active")" data-toggle="dropdown">Kategori</a>
                         <div class="dropdown-menu rounded-0 m-0">
                           @foreach ($kategori as $item)
-                            <a href="#" class="dropdown-item">{{ $item }}</a>
+                            <a href="/kategori/{{ $item }}" class="dropdown-item">{{ $item }}</a>
                           @endforeach
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                 <h4 class="font-weight-bold mb-4">Kategori</h4>
                 <div class="d-flex flex-wrap m-n1">
                     @foreach ($kategori as $k)
-                      <a href="" class="btn btn-sm btn-outline-secondary m-1">{{ $k }}</a>
+                      <a href="/kategori/{{ $k }}" class="btn btn-sm btn-outline-secondary m-1">{{ $k }}</a>
                     @endforeach
                 </div>
             </div>
