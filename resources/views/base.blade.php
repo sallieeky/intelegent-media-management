@@ -66,8 +66,9 @@
             <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav mr-auto py-0">
                     <a href="/" class="nav-item nav-link @yield("beranda_active")">Beranda</a>
-                    <a href="/berita-nasional" class="nav-item nav-link @yield("nasional_active")">Nasional</a>
                     <a href="/berita-internasional" class="nav-item nav-link @yield("internasional_active")">Internasional</a>
+                    <a href="/berita-nasional" class="nav-item nav-link @yield("nasional_active")">Nasional</a>
+                    <a href="https://papuabarat.tribunnews.com/manokwari" class="nav-item nav-link @yield("nasional_active")">Lokal</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle @yield("kategori_active")" data-toggle="dropdown">Kategori</a>
                         <div class="dropdown-menu rounded-0 m-0">
